@@ -885,7 +885,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Our Projects Section
+# Our gallary Section
 --------------------------------------------------------------*/
 .projects .portfolio-flters {
   padding: 0;
@@ -1900,14 +1900,39 @@ section {
   }
 }
 
-.hero .info h2 {
+.hero .info h2  {
+  position: relative;
+  font-size: 5em;
+  /* font-family: sans-serif; */
+  text-transform: uppercase;
+  /* font-size: 2em; */
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #F076F5, #fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/* .hero .info h2 {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-size: 56px;
   font-weight: 700;
   position: relative;
-}
+} */
 
 .hero .info h2:after {
   content: "";
