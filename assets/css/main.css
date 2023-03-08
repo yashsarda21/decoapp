@@ -740,7 +740,7 @@ section {
   margin-bottom: 50px;
 }
 
-.services .service-item .icon i {
+.services .service-item .icon p {
   color: var(--color-secondary);
   font-size: 40px;
   transition: ease-in-out 0.3s;
