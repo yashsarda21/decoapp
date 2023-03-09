@@ -11,6 +11,8 @@ Artists
 Venue
 Events
 
+git config core.autocrlf true
+
 
 History
 Established in 1992. A confluence of creativity, creation and charisma. At Jaju Decorators and Events it is all about crafting moments to make an occasion timeless.
