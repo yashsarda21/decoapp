@@ -860,7 +860,7 @@ overflow: hidden;
 
 .services .card_content {
 padding: 1rem;
-background: linear-gradient(to bottom left, #edb2ef 40%, #c850CE 100%);
+background: linear-gradient(to bottom left, #e29fe4 40%, #f0dcf1 100%);
 }
 
 .services .card_title {
@@ -2872,7 +2872,7 @@ font-weight: 400;
     transform: translate(40%, -40%);
     width: 150px;
     height: 150px;
-    background-color: #F076F5;
+    background-color: #f07cf7;
     border: 6px solid #A126AB;
     border-radius: 50%;
     opacity: 0.5;
