@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #c850CE;
   text-decoration: none;
 }
 
@@ -188,7 +188,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #c850CE;
   color: #fff;
 }
 
@@ -668,7 +668,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #c850CE;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1852,7 +1852,7 @@ font-weight: 400;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #c850CE;
 }
 
 @keyframes animate-loading {
@@ -2478,7 +2478,7 @@ font-weight: 400;
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #c850CE;
 }
 
 .blog .sidebar .categories ul {
