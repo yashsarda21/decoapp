@@ -1996,7 +1996,7 @@ font-weight: 400;
   overflow: hidden;
   background: linear-gradient(90deg, #F076F5, #fff, #fff);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70%;
   animation: animate 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
