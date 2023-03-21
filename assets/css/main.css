@@ -3564,151 +3564,6 @@ details[open] .faq-card-spoiler {
 
 /* } */
 
-/* *****************disck ball************ */
-
-@keyframes disco-ball-shimmer {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 40px 0;
-  }
-}
-@keyframes disco-lights-bkgd {
-  20% {
-    background-color: rgba(115, 173, 66, 0.15);
-  }
-  40% {
-    background-color: rgba(250, 190, 14, 0.15);
-  }
-  60% {
-    background-color: rgba(1, 101, 131, 0.15);
-  }
-  80% {
-    background-color: rgba(238, 104, 98, 0.15);
-  }
-}
-@keyframes disco-lights-mode-1 {
-  0% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(-145deg);
-  }
-}
-@keyframes disco-lights-mode-2 {
-  0% {
-    transform: rotate(-90deg);
-  }
-  100% {
-    transform: rotate(145deg);
-  }
-}
-@keyframes disco-lights-mode-3 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(165deg);
-  }
-}
-@keyframes disco-lights-mode-4 {
-  0% {
-    transform: rotate(-135deg);
-  }
-  100% {
-    transform: rotate(135deg);
-  }
-}
-/* body {
-  margin: 0;
-} */
-.body1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #f3b7f5;
-  overflow: hidden;
-}
-
-.body-text{
-  font-weight: 500;
-  color: white;
-  text-align: center;
-  /* margin: auto; */
-  align-items: center;
-
-}
-.body1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: disco-lights-bkgd 5s infinite;
-}
-.disco-ball {
-  position: relative;
-  
-}
-.disco-ball::before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: 20px;
-  left: 20px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: silver;
-  background: linear-gradient(to bottom left, silver 50%, black 100%);
-  /* background-image: linear-gradient(90deg, transparent 0%, #4a1919 50%, transparent 100%); */
-  background-size: 40px;
-  animation: disco-ball-shimmer 2s linear infinite;
-}
-.strobe-light {
-  position: relative;
-}
-.strobe-light::before,
-.strobe-light::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  width: 0;
-  height: 20px;
-  border-right: 100vw solid #4444dd;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-radius: 0 50px 50px 0;
-  transform-origin: left center;
-  filter: drop-shadow(10px 0 5px #4444dd);
-  animation: disco-lights-mode-1 2s infinite alternate linear;
-}
-.strobe-light--1::before {
-  border-right-color: rgba(115, 173, 66, 0.4);
-  filter: drop-shadow(10px 0 5px #73AD42);
-  animation-duration: 1.5s;
-}
-.strobe-light--1::after {
-  border-right-color: rgba(238, 104, 98, 0.4);
-  filter: drop-shadow(10px 0 5px #EE6862);
-  animation-name: disco-lights-mode-2;
-  animation-duration: 1.5s;
-}
-.strobe-light--2::before {
-  border-right-color: rgba(250, 190, 14, 0.4);
-  filter: drop-shadow(10px 0 5px #FABE0E);
-  animation-name: disco-lights-mode-3;
-  animation-duration: 1.5s;
-}
-.strobe-light--2::after {
-  border-right-color: rgba(1, 101, 131, 0.4);
-  filter: drop-shadow(10px 0 5px #016583);
-  animation-name: disco-lights-mode-4;
-  animation-duration: 2s;
-}
 
 
 /* *******************wedding8***************** */
@@ -3952,6 +3807,8 @@ input#open {
   overflow: hidden;
 }
 
+/* ***********************party********************** */
+
 
 .body3 {
 	padding: 0px;
@@ -4072,12 +3929,19 @@ input#open {
 /* ****************baby****************** */
 
 
+  /* @media (max-width: 800px) {
+    .baby {
+      width: 400px;
+    height: 400px;
+    }
+  } */
+
 .baby{
   position: relative;
   margin: 0 auto;
   margin-top: -3%;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   background: radial-gradient(circle at 55.7% 32.7%, #F7C6A2, #F7C6A2 4.1%, transparent 4.2%, transparent), radial-gradient(circle at 57% 28%, #E97276, #E97276 2%, transparent 2.1%, transparent), radial-gradient(circle at 54% 27%, transparent, transparent 4%, #ED9480 4%, #ED9480 5%, transparent 5.1%, transparent), radial-gradient(circle at 50.5% 31.6%, #F7C6A2, #F7C6A2 3%, transparent 3.1%, transparent), radial-gradient(circle at 49% 29%, transparent, transparent 4%, #ED9480 4%, #ED9480 5%, transparent 5.1%, transparent), radial-gradient(circle at 60.3% 49.2%, black, black 1.5%, transparent 1.6%, transparent), radial-gradient(circle at 45% 49.3%, black, black 1.7%, transparent 1.8%, transparent), radial-gradient(circle at 60.2% 49.2%, white, white 4%, transparent 4.1%, transparent), radial-gradient(circle at 45% 49.2%, white, white 4.2%, transparent 4.3%, transparent), radial-gradient(at 51.5% 49.6%, #F7C6A2, #F7C6A2 23.8%, transparent 23.9%, transparent), radial-gradient(at 51.5% 46.6%, #F7C6A2, #F7C6A2 23.8%, transparent 23.9%, transparent), radial-gradient(circle at 35.2% 54.7%, #ED9480, #ED9480 3.1%, transparent 3.2%, transparent), radial-gradient(circle at 68% 54.6%, #ED9480, #ED9480 3%, transparent 3.1%, transparent), radial-gradient(circle at 68% 54.6%, #F7C6A2, #F7C6A2 4.6%, transparent 4.7%, transparent), radial-gradient(circle at 35.2% 54.6%, #F7C6A2, #F7C6A2 5%, transparent 5.1%, transparent), radial-gradient(circle at 50.7% 74.5%, #8ED0EB, #8ED0EB 1.4%, transparent 1.5%, transparent), radial-gradient(circle at 52.3% 74.5%, #8ED0EB, #8ED0EB 1.4%, transparent 1.5%, transparent), radial-gradient(closest-side at 51.5% 75.3%, #0089B6, #0089B6 12.4%, transparent 12.9%, transparent), radial-gradient(circle at 51% 60.5%, #ED9480, #ED9480 9%, transparent 9.1%, transparent), radial-gradient(circle at 51.5% 63.5%, #F7C6A2, #F7C6A2 7%, transparent 7.1%, transparent), radial-gradient(circle at 51.5% 68.9%, white, white 12.5%, transparent 12.6%, transparent), radial-gradient(circle at 49% 73.4%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 47% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 44% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 55% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 58% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 41% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 62% 72.9%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 60% 72.9%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 63% 74%, #0089B6, #0089B6 6.2%, transparent 6.3%, transparent), radial-gradient(circle at 45.5% 77.1%, #0089B6, #0089B6 3.2%, transparent 3.3%, transparent), radial-gradient(circle at 38.5% 77%, #0089B6, #0089B6 3.2%, transparent 3.3%, transparent), radial-gradient(circle at 56% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 53% 73.3%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 51% 73.3%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 37.5% 75.8%, #0089B6, #0089B6 4.4%, transparent 4.5%, transparent), radial-gradient(circle at 65.5% 75.7%, #0089B6, #0089B6 4.4%, transparent 4.5%, transparent), radial-gradient(circle at 21% 81.2%, #00627D, #00627D 1.1%, transparent 1.2%, transparent), radial-gradient(circle at 82% 81.1%, #00627D, #00627D 1.1%, transparent 1.2%, transparent), radial-gradient(circle at 88% 49.8%, #E97276, #E97276 4.8%, transparent 4.9%, transparent), radial-gradient(circle at 91% 49.9%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 86.5% 30%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 16.5% 30%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 10.3% 23.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 16.5% 49.7%, #E97276, #E97276 4.9%, transparent 5%, transparent), radial-gradient(circle at 13.5% 49.7%, #E97276, #E97276 4.9%, transparent 5%, transparent), radial-gradient(circle at 16.8% 70.1%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 14.3% 70.1%, #E97276, #E97276 4.6%, transparent 4.7%, transparent), radial-gradient(circle at 12.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 19.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 83.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 88.3% 64.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 83.3% 59.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 81.7% 59.6%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 21.3% 59.7%, #E66266, #E66266 5.25%, transparent 5.35%, transparent), radial-gradient(circle at 23.7% 59.7%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 82.7% 39.9%, #E66266, #E66266 5%, transparent 5.1%, transparent), radial-gradient(circle at 80% 39.9%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 21% 39.9%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 23.7% 39.9%, #E66266, #E66266 5.3%, transparent 5.4%, transparent), radial-gradient(circle at 0% 42%, #E66266, #E66266 16%, transparent 16.1%, transparent), radial-gradient(circle at 110% 36%, #E66266, #E66266 20%, transparent 20.1%, transparent), radial-gradient(circle at 5% 80%, #E66266, #E66266 13%, transparent 13.1%, transparent), radial-gradient(circle at 98% 80%, #E66266, #E66266 13%, transparent 13.1%, transparent), radial-gradient(circle at 42% 51%, #E97276, #E97276 30%, transparent 30.1%, transparent), radial-gradient(circle at 62% 51%, #E97276, #E97276 29%, transparent 29.1%, transparent), linear-gradient(to bottom, #e66266, #e66266 25%, #E97276 25%, #E97276 35%, #e66266 35%, #e66266 45%, #E97276 45%, #E97276 55%, #e66266 55%, #e66266 65%, #E97276 65%, #E97276 75%, #e66266 75%, #e66266 80%, #00627D 80%, #00627D 82.5%, #e66266 82.5%, #e66266);
 }
 .baby:before{
@@ -4103,4 +3967,423 @@ animation: soother 2.5s infinite;
 
 @keyframes soother{
   50%{width: 101%; height: 101%; left: 0.5%; top: 0.5%;}
+}
+
+
+
+/* ****************LIGHT SND SOUND********************* */
+
+@keyframes disco-ball-shimmer {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+@keyframes disco-lights-bkgd {
+  20% {
+    background-color: rgba(115, 173, 66, 0.15);
+  }
+  40% {
+    background-color: rgba(250, 190, 14, 0.15);
+  }
+  60% {
+    background-color: rgba(1, 101, 131, 0.15);
+  }
+  80% {
+    background-color: rgba(238, 104, 98, 0.15);
+  }
+}
+@keyframes disco-lights-mode-1 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(-145deg);
+  }
+}
+@keyframes disco-lights-mode-2 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(145deg);
+  }
+}
+@keyframes disco-lights-mode-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(165deg);
+  }
+}
+@keyframes disco-lights-mode-4 {
+  0% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+/* body {
+  margin: 0;
+} */
+.body1 {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-color: #373E38;
+  overflow: hidden;
+}
+.body1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: disco-lights-bkgd 5s infinite;
+}
+.disco-ball {
+  position: relative;
+}
+.disco-ball::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: silver;
+  background-image: linear-gradient(90deg, transparent 0%, #fff 50%, transparent 100%);
+  background-size: 40px;
+  animation: disco-ball-shimmer 2s linear infinite;
+}
+.strobe-light {
+  position: relative;
+}
+.strobe-light::before,
+.strobe-light::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 0;
+  height: 20px;
+  border-right: 100vw solid #4444dd;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 0 50px 50px 0;
+  transform-origin: left center;
+  filter: drop-shadow(10px 0 5px #4444dd);
+  animation: disco-lights-mode-1 2s infinite alternate linear;
+}
+.strobe-light--1::before {
+  border-right-color: rgba(115, 173, 66, 0.4);
+  filter: drop-shadow(10px 0 5px #73AD42);
+  animation-duration: 1.5s;
+}
+.strobe-light--1::after {
+  border-right-color: rgba(238, 104, 98, 0.4);
+  filter: drop-shadow(10px 0 5px #EE6862);
+  animation-name: disco-lights-mode-2;
+  animation-duration: 1.5s;
+}
+.strobe-light--2::before {
+  border-right-color: rgba(250, 190, 14, 0.4);
+  filter: drop-shadow(10px 0 5px #FABE0E);
+  animation-name: disco-lights-mode-3;
+  animation-duration: 1.5s;
+}
+.strobe-light--2::after {
+  border-right-color: rgba(1, 101, 131, 0.4);
+  filter: drop-shadow(10px 0 5px #016583);
+  animation-name: disco-lights-mode-4;
+  animation-duration: 2s;
+}
+
+
+
+/* **********DRUM********************** */
+
+.drumbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7e2f8;
+  min-height: 50vh;
+  margin: 0;
+}
+
+.drum {
+  --drum-yellow: #e9c46a;
+  --drum-dark-yellow: #cf9b1f;
+  --drum-light-red: #ef233c;
+  --drum-dark-red: #6a040f;
+  --drum-white: #edf6f9;
+  --drum-top: #cec2ab;
+  --drum-stick: #887880;--drum-yellow: #e9c46a;
+  --drum-dark-yellow: #cf9b1f;
+  --drum-light-red: #df31e5;
+  --drum-dark-red: #6a040f;
+  --drum-white: #edf6f9;
+  --drum-top: #cec2ab;
+  --drum-stick: #887880;
+
+  position: relative;
+  width: 16rem;
+  height: 17rem;
+  transform: rotate(5deg);
+}
+
+.drum .side {
+  position: absolute;
+  top: 6rem;
+}
+
+.drum .side__bottom {
+  position: absolute;
+  top: 3rem;
+  width: 16rem;
+  height: 8rem;
+  background-color: var(--drum-yellow);
+  border-radius: 0 0 50% 50% / 0 0 2rem 2rem;
+}
+
+.drum .side__bottom::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -3rem;
+  width: 16rem;
+  height: 9rem;
+  background-color: var(--drum-dark-red);
+  border-radius: 0 0 50% 50% / 0 0 2rem 2rem;
+}
+
+.drum .side__bottom::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -3.2rem;
+  width: 16rem;
+  height: 9rem;
+  background-color: var(--drum-light-red);
+  border-radius: 0 0 50% 50% / 0 0 2rem 2rem;
+}
+
+.drum .side__top {
+  position: absolute;
+  width: 16rem;
+  height: 3rem;
+}
+
+.drum .side__top::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16rem;
+  height: 3rem;
+  background-color: var(--drum-dark-red);
+  border-radius: 0 0 50% 50% / 0 0 2rem 2rem;
+}
+
+.drum .side__top::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1.2rem;
+  width: 16rem;
+  height: 4rem;
+  background-color: var(--drum-yellow);
+  border-radius: 0 0 50% 50% / 0 0 2rem 2rem;
+}
+
+.drum .side .pattern {
+  position: absolute;
+  height: 9rem;
+  border-right: 0.4rem solid var(--drum-yellow);
+}
+
+.drum .side .pattern::after,
+.drum .side .pattern.pattern-6::before{
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: -0.4rem;
+  position: absolute;
+  background-color: var(--drum-white);
+  border-radius: 50%;
+}
+
+.drum .side .pattern.pattern-1 {
+  transform: translateX(1.6rem) translateY(0.6rem) rotate(-20deg);
+}
+.drum .side .pattern.pattern-1::after {
+  top: 0.3rem;
+}
+
+.drum .side .pattern.pattern-2 {
+  transform: translateX(4.4rem) translateY(0.6rem) rotate(20deg);
+}
+.drum .side .pattern.pattern-2::after {
+  top: 7.6rem;
+  left: -0.2rem;
+}
+
+.drum .side .pattern.pattern-3 {
+  transform: translateX(6.3rem) translateY(0.6rem) rotate(-20deg);
+}
+.drum .side .pattern.pattern-3::after {
+  top: 1.3rem;
+  left: -0.05rem;
+}
+
+.drum .side .pattern.pattern-4 {
+  transform: translateX(9.3rem) translateY(0.6rem) rotate(20deg);
+}
+.drum .side .pattern.pattern-4::after {
+  top: 8rem;
+  left: -0.1rem;
+}
+
+.drum .side .pattern.pattern-5 {
+  transform: translateX(11.3rem) translateY(0.6rem) rotate(-20deg);
+}
+.drum .side .pattern.pattern-5::after {
+  top: 1.3rem;
+  left: -0.1rem;
+}
+
+.drum .side .pattern.pattern-6 {
+  transform: translateX(14rem) translateY(0.6rem) rotate(20deg);
+}
+.drum .side .pattern.pattern-6::before {
+  top: 7.6rem;
+  left: -0.1rem;
+}
+.drum .side .pattern.pattern-6::after {
+  top: 0.4rem;
+}
+
+.drum .top {
+  position: absolute;
+  top: 2rem;
+  width: 16rem;
+  height: 5rem;
+  background-color: var(--drum-dark-yellow);
+  border-radius: 50% / 2rem;
+  overflow: hidden;
+}
+
+.drum .top::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1rem;
+  width: 16rem;
+  height: 4rem;
+  background-color: var(--drum-top);
+  border-radius: 50% / 2rem;
+}
+
+.drum .top::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -0.1rem;
+  left: -0.5rem;
+  box-sizing: border-box;
+  width: 17rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--drum-yellow);
+}
+
+.drum .drum-stick {
+  position: absolute;
+  z-index: 5;
+  width: 12rem;
+  height: 0.6rem;
+  background: var(--drum-stick);
+  border-radius: 50% 20% 20% 50% / 50% ;
+  transform-origin: 90% 50%;
+}
+
+.drum .drum-stick::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0.8rem;
+  height: 0.6rem;
+  background: var(--drum-stick);
+  border-radius: 50%;
+}
+
+.drum .drum-stick.drum-stick--left {
+  left: -14rem;
+  top: -1rem;
+  transform: rotate(-170deg);
+  animation: anim-drum-stick-left 0.3s infinite;
+}
+
+.drum .drum-stick.drum-stick--right {
+  left: 9rem;
+  top: -1rem;
+  transform: rotate(-30deg);
+  animation: anim-drum-stick-right 0.3s infinite;
+}
+
+.drum .drum-stick-shadow {
+  position: absolute;
+  top: 4rem;
+  width: 3rem;
+  height: 1.5rem;
+  background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 50%);
+  border-radius: 50%;
+}
+
+.drum .drum-stick-shadow.drum-stick-shadow--left {
+  left: 4.5rem;
+  animation: anim-drum-shadow-left 0.3s infinite;
+}
+
+.drum .drum-stick-shadow.drum-stick-shadow--left {
+  left: 4.5rem;
+  animation: anim-drum-shadow-left 0.3s infinite;
+}
+
+.drum .drum-stick-shadow.drum-stick-shadow--right {
+  left: 9rem;
+  animation: anim-drum-shadow-right 0.3s infinite;
+}
+
+@keyframes anim-drum-stick-left {
+  0%   { transform: rotate(-170deg) translateX(1rem); }
+  50%   { transform: rotate(-150deg) translateX(0); }
+  100% { transform: rotate(-170deg) translateX(1rem); }
+}
+
+@keyframes anim-drum-shadow-left {
+  0%   { transform: scale(1.6); opacity: 0.3; }
+  50%   { transform: scale(0.6); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0.3; }
+}
+
+
+@keyframes anim-drum-stick-right {
+  0%   { transform: rotate(-30deg) translateX(0); }
+  50%   { transform: rotate(-10deg) translateX(1rem); }
+  100% { transform: rotate(-30deg) translateX(0); }
+}
+
+@keyframes anim-drum-shadow-right {
+  0%   { transform: scale(0.6); opacity: 1; }
+  50%   { transform: scale(1.6); opacity: 0.3; }
+  100% { transform: scale(0.6); opacity: 1; }
 }

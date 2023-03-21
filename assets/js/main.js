@@ -261,3 +261,23 @@ for (const question of questions) {
 
   question.addEventListener("click", openAnswer);
 }
+TweenMax.set(".st0", { visibility: "visible" });
+
+var tl = new TimelineMax({ repeat: 6, repeatDelay: 1, yoyo: true });
+
+tl
+  // staggers letter drawing animation
+  .staggerFrom(
+    ".st0",
+    0.75,
+    { drawSVG: "50% 50%", ease: Power1.easeInOut },
+    0.25
+  )
+  // animates the fill color
+  .fromTo(
+    ".st0",
+    0.75,
+    { fill: "none" },
+    { fill: "#ff0054", ease: Power1.easeInOut },
+    "-=0.5"
+  );
