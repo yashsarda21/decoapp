@@ -1996,7 +1996,7 @@ font-weight: 400;
   overflow: hidden;
   background: linear-gradient(90deg, #F076F5, #fff, #fff);
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 80%;
   animation: animate 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
@@ -2692,7 +2692,7 @@ font-weight: 400;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer {
+/* .footer {
   color: #fff;
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
@@ -2801,8 +2801,170 @@ font-weight: 400;
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+} */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
 }
-
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
 /****************************** .services************************** */
 
 .section-services {
@@ -3018,4 +3180,927 @@ details[open] .faq-card-spoiler {
 .faq-aftertext {
   text-align: center;
   color: #8b8b9a;
+}
+
+
+
+/* *****************cake************************** */
+
+#cake {
+  display: block;
+  position: relative;
+  margin: -10em auto 0 auto;
+}
+
+/* ============================================== Candle
+*/
+
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 35px;
+  transform: translateY(-300px);
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s 6.5s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s 6.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s 6.5s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s 6.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s 6.5s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+  0%, 100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.text {
+  color: #8b6a60;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+ 
+} 
+
+
+/* ***********Coroporrate*************** */
+
+
+/* @media (max-width: 1000){ */
+
+  
+  #body {
+    width: 100%;
+    /* min-height: 100vh; */
+  }
+  
+  #opty_hands {
+    background: #FEBD25;
+    margin-left: 40%;
+  width: 25vw;
+  height: 25vw;
+  font-size: 1.5vw;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.left-hand {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: -8%;
+  width: 40%;
+  height: 30%;
+  z-index: 3;
+  background: #282830;
+  box-shadow: 0 2.3rem 0 0 rgba(0, 0, 0, 0.4) inset;
+  transform: rotate(15deg);
+}
+
+.left-hand span {
+  displaY: block;
+  position: absolute;
+  right: 15%;
+  top: 40%;
+  letter-spacing: -0.6rem;
+  line-height: 0;
+  color: #eee;
+  font-size: 7em;
+}
+
+.left-hand::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 100%;
+  top: 0;
+  z-index: -1;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 10%;
+  height: 100%;
+  background: #2a2a2a;
+}
+
+.left-hand::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  left: 100%;
+  top: 12.5%;
+  width: 15%;
+  height: 75%;
+  background: #fff;
+}
+
+.right-hand {
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: -8%;
+  width: 40%;
+  height: 30%;
+  z-index: 3;
+  background: #6C8784;
+  box-shadow: 0 2.3rem 0 0 rgba(0, 0, 0, 0.4) inset;
+  transform: rotate(-15deg);
+}
+
+.right-hand span {
+  displaY: block;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  letter-spacing: -0.6rem;
+  line-height: 0;
+  color: #eee;
+  font-size: 7em;
+}
+
+.right-hand::after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 10%;
+  height: 100%;
+  background: #2a2a2a;
+}
+
+.right-hand::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  right: 100%;
+  top: 12.5%;
+  width: 15%;
+  height: 75%;
+  background: #fff;
+}
+
+.left-shake {
+  position: absolute;
+  height: 18%;
+  width: 31%;
+  z-index: 2;
+  border-radius: 20%;
+  left: 31%;
+  top: 54%;
+  background: #F3D89F;
+  transform: rotate(45deg);
+}
+
+.right-shake {
+  position: absolute;
+  height: 18%;
+  width: 31%;
+  z-index: 1;
+  border-radius: 20%;
+  right: 31%;
+  top: 52%;
+  background: #E3C39D;
+  transform: rotate(-45deg);
+}
+
+.left-shake span {
+  position: absolute;
+  right: 0;
+  top: -20%;
+  z-index: 1;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 3em;
+  line-height: 25%;
+}
+
+.right-shake::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  border-radius: 30%;
+  background: #F3D89F;
+  top: -30%;
+  z-index: -1;
+  right: 13%;
+  transform: rotate(40deg);
+  box-shadow: -6px -5px 0 0 #E3C39D inset;
+}
+
+.left-shake::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  border-radius: 30%;
+  background: #E3C39D;
+  top: -40%;
+  z-index: -1;
+  right: 34%;
+  transform: rotate(110deg);
+  box-shadow: 0.1em -0.05em 0 rgba(0, 0, 0, 0.05);
+}
+
+.left-shake::before {
+  content: '|||';
+  font-weight: 500;
+  text-indent: 0.25em;
+  color: rgba(0, 0, 0, 0.1);
+  line-height: 80%;
+  font-size: 1.6em;
+  letter-spacing: 0.15em;
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: #E3C39D;
+  box-shadow: 0px -0.5em 0 0 #E3C39D inset, 0px -0.55em 0 0 rgba(0, 0, 0, 0.1) inset, 0px -1em 0 0 rgba(255, 255, 255, 0.2) inset, 0.1em -0.1em 0 0 rgba(0, 0, 0, 0.1);
+  right: 10%;
+  z-index: 2;
+  border-radius: 20%;
+  bottom: -10%;
+}
+
+.right-shake::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  right: 39%;
+}
+
+.right-hand {
+  -webkit-animation: right-arm 0.5s linear infinite alternate;
+}
+
+.left-hand {
+  -webkit-animation: left-arm 0.5s linear infinite alternate;
+}
+
+.right-shake {
+  -webkit-animation: right-hand 0.5s linear infinite alternate;
+}
+
+.left-shake {
+  -webkit-animation: left-hand 0.5s linear infinite alternate;
+}
+
+@-webkit-keyframes right-arm {
+  0% {
+    top: 37%;
+    transform: rotate(-15deg);
+  }
+  100% {
+    top: 38%;
+    transform: rotate(-20deg)
+  }
+}
+
+@-webkit-keyframes left-arm {
+  0% {
+    top: 35%;
+    transform: rotate(15deg);
+  }
+  100% {
+    top: 36%;
+    transform: rotate(20deg);
+  }
+}
+
+@-webkit-keyframes right-hand {
+  0% {
+    top: 52%;
+  }
+  100% {
+    top: 57%;
+  }
+}
+
+@-webkit-keyframes left-hand {
+  0% {
+    top: 54%;
+  }
+  100% {
+    top: 57%;
+  }
+}
+
+/* } */
+
+/* *****************disck ball************ */
+
+@keyframes disco-ball-shimmer {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
+}
+@keyframes disco-lights-bkgd {
+  20% {
+    background-color: rgba(115, 173, 66, 0.15);
+  }
+  40% {
+    background-color: rgba(250, 190, 14, 0.15);
+  }
+  60% {
+    background-color: rgba(1, 101, 131, 0.15);
+  }
+  80% {
+    background-color: rgba(238, 104, 98, 0.15);
+  }
+}
+@keyframes disco-lights-mode-1 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(-145deg);
+  }
+}
+@keyframes disco-lights-mode-2 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(145deg);
+  }
+}
+@keyframes disco-lights-mode-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(165deg);
+  }
+}
+@keyframes disco-lights-mode-4 {
+  0% {
+    transform: rotate(-135deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+/* body {
+  margin: 0;
+} */
+.body1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f3b7f5;
+  overflow: hidden;
+}
+
+.body-text{
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  /* margin: auto; */
+  align-items: center;
+
+}
+.body1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: disco-lights-bkgd 5s infinite;
+}
+.disco-ball {
+  position: relative;
+  
+}
+.disco-ball::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: silver;
+  background: linear-gradient(to bottom left, silver 50%, black 100%);
+  /* background-image: linear-gradient(90deg, transparent 0%, #4a1919 50%, transparent 100%); */
+  background-size: 40px;
+  animation: disco-ball-shimmer 2s linear infinite;
+}
+.strobe-light {
+  position: relative;
+}
+.strobe-light::before,
+.strobe-light::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 0;
+  height: 20px;
+  border-right: 100vw solid #4444dd;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-radius: 0 50px 50px 0;
+  transform-origin: left center;
+  filter: drop-shadow(10px 0 5px #4444dd);
+  animation: disco-lights-mode-1 2s infinite alternate linear;
+}
+.strobe-light--1::before {
+  border-right-color: rgba(115, 173, 66, 0.4);
+  filter: drop-shadow(10px 0 5px #73AD42);
+  animation-duration: 1.5s;
+}
+.strobe-light--1::after {
+  border-right-color: rgba(238, 104, 98, 0.4);
+  filter: drop-shadow(10px 0 5px #EE6862);
+  animation-name: disco-lights-mode-2;
+  animation-duration: 1.5s;
+}
+.strobe-light--2::before {
+  border-right-color: rgba(250, 190, 14, 0.4);
+  filter: drop-shadow(10px 0 5px #FABE0E);
+  animation-name: disco-lights-mode-3;
+  animation-duration: 1.5s;
+}
+.strobe-light--2::after {
+  border-right-color: rgba(1, 101, 131, 0.4);
+  filter: drop-shadow(10px 0 5px #016583);
+  animation-name: disco-lights-mode-4;
+  animation-duration: 2s;
+}
+
+
+/* *******************wedding8***************** */
+.jewellery-box {
+  position: relative;
+  filter: drop-shadow(0 0 30px rgba(0,0,0,0.4));
+}
+
+input#open {
+  display: none;
+}
+
+.diamond-ring {
+  position: relative;
+}
+
+.diamond {
+  position: relative;
+  border-style: solid;
+  border-color: transparent transparent #27c3f3 transparent;
+  border-width: 0 5px 5px 5px;
+  height: 0;
+  width: 15px; 
+  z-index:1;
+}
+.diamond:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #27c3f3 transparent transparent transparent;
+  border-width: 15px 12.5px 0 12.5px;
+}
+
+.diamond:after {
+  content:"";
+  position: absolute;
+  border-style: solid;
+  border-color: #7fd4f9 transparent transparent transparent;
+  border-width: 15px 7px 7px;
+  width:0;
+  height:0;
+  left:0.5px;
+  top:5px;
+}
+
+.inner {
+  position:absolute;
+  background-color: #cf7b4a;
+  width:70px;
+  height:15px;
+  z-index:3;
+  left:-20px;
+  top:55px;
+  border-radius:20px 20px 0 0;
+}
+
+.band {
+  position: absolute;
+  width:45px;
+  height:45px;
+  border: 5px solid #fed53f;
+  border-radius: 50%;
+  top:15px;
+  left:-15px;
+  z-index:1;
+}
+
+.band:before, .band:after {
+  content:"+";
+  position: absolute;
+  color:rgba(255,255,255,.5);
+}
+
+.band:before {
+  left:5px;
+  top:-15px;
+  font-size:7px;
+  text-shadow: 20px -12px;
+  animation: shine .5s linear infinite;
+}
+
+.band:after {
+  left:32px;
+  top:-12px;
+  font-size:9px;
+  text-shadow: -19px -18px;
+  animation: shine .5s linear infinite .2s;
+}
+
+@keyframes shine {
+  from {opacity:1;}
+  to {opacity:0;}
+}
+
+.open {
+  position: absolute;
+  z-index:5;
+  background-color: #7a0084;
+  width: 170px;
+  height:40px;
+  border-radius: 30px 30px 0 0;
+  left:-70px;
+  top:-10px;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.bottom {
+  position: absolute;
+  z-index:5;
+  background-color: #7a0084;
+  width:170px;
+  height:40px;
+  box-shadow: 0 -10px #7a0084;
+  border-radius: 0 0 15px 15px;
+  top:40px;
+  left:-70px;
+  transition: .1s;
+}
+
+.bottom:before {
+  content:"";
+  position: absolute;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  background-color: #7a0084;
+  top:13px;
+  left:13px;
+  box-shadow: 0px 0 #550061 ,15px 0 #550061, 30px 0 #550061, 45px 0 #550061, 60px 0 #550061, 75px 0 #550061, 90px 0 #550061, 105px 0 #550061, 120px 0 #550061, 135px 0 #550061;
+}
+
+#open:checked + .open {
+  transform: translateY(-40px);
+}
+
+#open:checked ~  .bottom {
+  transform: translateY(45px);
+}
+
+.inner-top {
+  position: absolute;
+  width:150px;
+  height:0;
+  border-style: solid;
+  border-width: 0 10px 50px 10px;
+  border-color: transparent transparent #7a0084 transparent;
+  transition: .1s;
+  transform-origin: top;
+  left:-70px;
+  top:40px;
+  transform: rotateX(85deg);
+}
+
+.inner-top:before {
+  content:"";
+  position: absolute;
+  width:130px;
+  height:0;
+  border-style: solid;
+  border-width: 0 10px 50px 10px;
+  border-color: transparent transparent #7a0084 transparent;
+  transition: .1s;
+  transform-origin: top;
+  left:0;
+  top:0;
+}
+
+#open:checked ~  .inner-top {
+  transform: rotateX(180deg);
+}
+
+.inner-bottom {
+  position: absolute;
+  width:150px;
+  height:0;
+  border-style: solid;
+  border-width: 0 10px 60px 10px;
+  border-color: transparent transparent #7a0084 transparent;
+  transition: .1s;
+  transform-origin: top;
+  left:-70px;
+  top:40px;
+  transform: rotateX(85deg);
+}
+
+.inner-bottom:before {
+  content:"";
+  position: absolute;
+  width:130px;
+  height:0;
+  border-style: solid;
+  border-width: 0 10px 60px 10px;
+  border-color: transparent transparent #a126a8 transparent;
+  transition: .1s;
+  transform-origin: top;
+  left:0;
+  top:0;
+}
+
+#open:checked ~  .inner-bottom {
+  transform: rotateX(-40deg);
+}
+
+.details {
+  position: absolute;
+  width:132px;
+  background-color: #a126a8;
+  border-radius:20px 20px 0 0;
+  height:10px;
+  left:-51px;
+  top:35px;
+}
+
+.text {
+  position: absolute;
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 30px;
+  transition: .3s;
+  width:300px;
+  text-align: center;
+  top:-165px;
+  left:-130px;
+  opacity:0;
+}
+
+#open:checked ~  .text {
+  opacity:1;
+}
+.body2 {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  background-color: #f3b7f5;
+  overflow: hidden;
+}
+
+
+.body3 {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	background: url(https://image.ibb.co/hTLZRV/wall.jpg);
+}
+
+.speakerL {
+	position: absolute;
+	left: 10%;
+	bottom: 250px;
+	z-index: 5;
+}
+.lightL {
+	position: absolute;
+	left: 20%;
+	top: -195px;
+	z-index: 999;
+}
+.lightR {
+	position: absolute;
+	right: 20%;
+	top: -195px;
+	z-index: 999;
+}
+.speakerR {
+	position: absolute;
+	right: 10%;
+	bottom: 250px;
+	z-index: 5;
+}
+.crowd {
+	position: absolute;
+	bottom: 0;
+	z-index: 9999;
+}
+.crwd1 {
+	left: 10px;
+}
+.crwd2 {
+	left: 120px;
+}
+.crwd3 {
+	left: 240px;
+}
+.crwd4 {
+	left: 400px;
+}
+.crwd5 {
+	left: 550px;
+}
+.crwd6 {
+	left: 600px;
+}
+.crwd7 {
+	left: 700px;
+}
+.crwd8 {
+	left: 850px;
+}
+.crwd9 {
+	left: 1000px;
+}
+.crwd10 {
+	left: 1150px;
+}
+.crwd11 {
+	left: 1350px;
+}
+.crwd12 {
+	left: 1500px;
+}
+.crwd13 {
+	left: 1600px;
+}
+.crwd14 {
+	left: 1800px;
+}
+.psy {
+	background: url(https://image.ibb.co/kRoDmV/psy.png) no-repeat;
+	width: 225px;
+	height: 400px;
+	position: fixed;
+	left: 50%;
+	margin-left: -91px;
+	bottom: 160px;
+	z-index: 99;
+}
+.guitar-player {
+	position: fixed;
+	left: 25%;
+	bottom: 220px;
+	z-index: 9;
+	width: 155px;
+	display: none;
+}
+.drummer-player {
+	position: fixed;
+	right: 25%;
+	bottom: 230px;
+	z-index: 9;
+	width: 255px;
+	display: none;
+}
+.drummer-player2 {
+	position: fixed;
+	left: 28%;
+	bottom: 230px;
+	z-index: 9;
+	width: 255px;
+	display: none;
+}
+.guitar-player img, .drummer-player img, .drummer-player2 img {
+	width: 100%;
+}
+
+/* ****************baby****************** */
+
+
+.baby{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -3%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle at 55.7% 32.7%, #F7C6A2, #F7C6A2 4.1%, transparent 4.2%, transparent), radial-gradient(circle at 57% 28%, #E97276, #E97276 2%, transparent 2.1%, transparent), radial-gradient(circle at 54% 27%, transparent, transparent 4%, #ED9480 4%, #ED9480 5%, transparent 5.1%, transparent), radial-gradient(circle at 50.5% 31.6%, #F7C6A2, #F7C6A2 3%, transparent 3.1%, transparent), radial-gradient(circle at 49% 29%, transparent, transparent 4%, #ED9480 4%, #ED9480 5%, transparent 5.1%, transparent), radial-gradient(circle at 60.3% 49.2%, black, black 1.5%, transparent 1.6%, transparent), radial-gradient(circle at 45% 49.3%, black, black 1.7%, transparent 1.8%, transparent), radial-gradient(circle at 60.2% 49.2%, white, white 4%, transparent 4.1%, transparent), radial-gradient(circle at 45% 49.2%, white, white 4.2%, transparent 4.3%, transparent), radial-gradient(at 51.5% 49.6%, #F7C6A2, #F7C6A2 23.8%, transparent 23.9%, transparent), radial-gradient(at 51.5% 46.6%, #F7C6A2, #F7C6A2 23.8%, transparent 23.9%, transparent), radial-gradient(circle at 35.2% 54.7%, #ED9480, #ED9480 3.1%, transparent 3.2%, transparent), radial-gradient(circle at 68% 54.6%, #ED9480, #ED9480 3%, transparent 3.1%, transparent), radial-gradient(circle at 68% 54.6%, #F7C6A2, #F7C6A2 4.6%, transparent 4.7%, transparent), radial-gradient(circle at 35.2% 54.6%, #F7C6A2, #F7C6A2 5%, transparent 5.1%, transparent), radial-gradient(circle at 50.7% 74.5%, #8ED0EB, #8ED0EB 1.4%, transparent 1.5%, transparent), radial-gradient(circle at 52.3% 74.5%, #8ED0EB, #8ED0EB 1.4%, transparent 1.5%, transparent), radial-gradient(closest-side at 51.5% 75.3%, #0089B6, #0089B6 12.4%, transparent 12.9%, transparent), radial-gradient(circle at 51% 60.5%, #ED9480, #ED9480 9%, transparent 9.1%, transparent), radial-gradient(circle at 51.5% 63.5%, #F7C6A2, #F7C6A2 7%, transparent 7.1%, transparent), radial-gradient(circle at 51.5% 68.9%, white, white 12.5%, transparent 12.6%, transparent), radial-gradient(circle at 49% 73.4%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 47% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 44% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 55% 73.2%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 58% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 41% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 62% 72.9%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 60% 72.9%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 63% 74%, #0089B6, #0089B6 6.2%, transparent 6.3%, transparent), radial-gradient(circle at 45.5% 77.1%, #0089B6, #0089B6 3.2%, transparent 3.3%, transparent), radial-gradient(circle at 38.5% 77%, #0089B6, #0089B6 3.2%, transparent 3.3%, transparent), radial-gradient(circle at 56% 73.1%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 53% 73.3%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 51% 73.3%, #0089B6, #0089B6 7.4%, transparent 7.5%, transparent), radial-gradient(circle at 37.5% 75.8%, #0089B6, #0089B6 4.4%, transparent 4.5%, transparent), radial-gradient(circle at 65.5% 75.7%, #0089B6, #0089B6 4.4%, transparent 4.5%, transparent), radial-gradient(circle at 21% 81.2%, #00627D, #00627D 1.1%, transparent 1.2%, transparent), radial-gradient(circle at 82% 81.1%, #00627D, #00627D 1.1%, transparent 1.2%, transparent), radial-gradient(circle at 88% 49.8%, #E97276, #E97276 4.8%, transparent 4.9%, transparent), radial-gradient(circle at 91% 49.9%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 86.5% 30%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 16.5% 30%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 10.3% 23.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 16.5% 49.7%, #E97276, #E97276 4.9%, transparent 5%, transparent), radial-gradient(circle at 13.5% 49.7%, #E97276, #E97276 4.9%, transparent 5%, transparent), radial-gradient(circle at 16.8% 70.1%, #E97276, #E97276 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 14.3% 70.1%, #E97276, #E97276 4.6%, transparent 4.7%, transparent), radial-gradient(circle at 12.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 19.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 83.3% 70%, #E97276, #E97276 4.7%, transparent 4.8%, transparent), radial-gradient(circle at 88.3% 64.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 83.3% 59.7%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 81.7% 59.6%, #E66266, #E66266 5.1%, transparent 5.2%, transparent), radial-gradient(circle at 21.3% 59.7%, #E66266, #E66266 5.25%, transparent 5.35%, transparent), radial-gradient(circle at 23.7% 59.7%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 82.7% 39.9%, #E66266, #E66266 5%, transparent 5.1%, transparent), radial-gradient(circle at 80% 39.9%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 21% 39.9%, #E66266, #E66266 5.2%, transparent 5.3%, transparent), radial-gradient(circle at 23.7% 39.9%, #E66266, #E66266 5.3%, transparent 5.4%, transparent), radial-gradient(circle at 0% 42%, #E66266, #E66266 16%, transparent 16.1%, transparent), radial-gradient(circle at 110% 36%, #E66266, #E66266 20%, transparent 20.1%, transparent), radial-gradient(circle at 5% 80%, #E66266, #E66266 13%, transparent 13.1%, transparent), radial-gradient(circle at 98% 80%, #E66266, #E66266 13%, transparent 13.1%, transparent), radial-gradient(circle at 42% 51%, #E97276, #E97276 30%, transparent 30.1%, transparent), radial-gradient(circle at 62% 51%, #E97276, #E97276 29%, transparent 29.1%, transparent), linear-gradient(to bottom, #e66266, #e66266 25%, #E97276 25%, #E97276 35%, #e66266 35%, #e66266 45%, #E97276 45%, #E97276 55%, #e66266 55%, #e66266 65%, #E97276 65%, #E97276 75%, #e66266 75%, #e66266 80%, #00627D 80%, #00627D 82.5%, #e66266 82.5%, #e66266);
+}
+.baby:before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: radial-gradient(circle at 54.3% 61%, #8ED0EB, #8ED0EB 1.5%, transparent 1.6%, transparent), radial-gradient(circle at 56.4% 61.6%, #8ED0EB, #8ED0EB 3.3%, transparent 3.4%, transparent), radial-gradient(circle at 56.4% 61.6%, #0089B6, #0089B6 3.5%, transparent 3.6%, transparent), radial-gradient(circle at 56.4% 61.6%, #8ED0EB, #8ED0EB 4.5%, transparent 4.6%, transparent), radial-gradient(circle at 57% 61.5%, #0089B6, #0089B6 6.8%, transparent 6.9%, transparent), radial-gradient(circle at 56% 60%, #0089B6, #0089B6 6.5%, transparent 6.6%, transparent), radial-gradient(circle at 56% 60%, #8ED0EB, #8ED0EB 6.8%, transparent 6.9%, transparent), radial-gradient(circle at 56.4% 60.6%, #0089B6, #0089B6 8.4%, transparent 8.5%, transparent);
+animation: soother 2.5s infinite;
+}
+.baby:after{
+  content: "";
+  position: absolute;
+  width: 2.5%;
+  height: 2.5%;
+  left: 50.3%;
+  top: 73.6%;
+  background: linear-gradient(to top left, #8ED0EB, #8ED0EB 50%, transparent 51%, transparent);
+  transform: rotate(45deg);
+}
+
+@keyframes soother{
+  50%{width: 101%; height: 101%; left: 0.5%; top: 0.5%;}
 }
