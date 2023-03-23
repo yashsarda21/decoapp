@@ -3809,121 +3809,42 @@ input#open {
 
 /* ***********************party********************** */
 
-
 .body3 {
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
-	background: url(https://image.ibb.co/hTLZRV/wall.jpg);
+  background: linear-gradient(to top, #be93c5, #7bc6cc);
+  height: 90%;
+  overflow: hidden;
 }
 
-.speakerL {
-	position: absolute;
-	left: 10%;
-	bottom: 250px;
-	z-index: 5;
+.svg {
+  display: none;
+  z-index: 1;
 }
-.lightL {
-	position: absolute;
-	left: 20%;
-	top: -195px;
-	z-index: 999;
+
+.control {
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  width: 40px;
 }
-.lightR {
-	position: absolute;
-	right: 20%;
-	top: -195px;
-	z-index: 999;
+
+.dance {
+  animation: sprite-animation 1.45s steps(11, end) infinite;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/160607/veronicadance-pink.svg") no-repeat;
+  height: 550px;
+  margin: 20px auto;
+  position: relative;
+  width: 550px;
+  z-index: 2;
 }
-.speakerR {
-	position: absolute;
-	right: 10%;
-	bottom: 250px;
-	z-index: 5;
-}
-.crowd {
-	position: absolute;
-	bottom: 0;
-	z-index: 9999;
-}
-.crwd1 {
-	left: 10px;
-}
-.crwd2 {
-	left: 120px;
-}
-.crwd3 {
-	left: 240px;
-}
-.crwd4 {
-	left: 400px;
-}
-.crwd5 {
-	left: 550px;
-}
-.crwd6 {
-	left: 600px;
-}
-.crwd7 {
-	left: 700px;
-}
-.crwd8 {
-	left: 850px;
-}
-.crwd9 {
-	left: 1000px;
-}
-.crwd10 {
-	left: 1150px;
-}
-.crwd11 {
-	left: 1350px;
-}
-.crwd12 {
-	left: 1500px;
-}
-.crwd13 {
-	left: 1600px;
-}
-.crwd14 {
-	left: 1800px;
-}
-.psy {
-	background: url(https://image.ibb.co/kRoDmV/psy.png) no-repeat;
-	width: 225px;
-	height: 400px;
-	position: fixed;
-	left: 50%;
-	margin-left: -91px;
-	bottom: 160px;
-	z-index: 99;
-}
-.guitar-player {
-	position: fixed;
-	left: 25%;
-	bottom: 220px;
-	z-index: 9;
-	width: 155px;
-	display: none;
-}
-.drummer-player {
-	position: fixed;
-	right: 25%;
-	bottom: 230px;
-	z-index: 9;
-	width: 255px;
-	display: none;
-}
-.drummer-player2 {
-	position: fixed;
-	left: 28%;
-	bottom: 230px;
-	z-index: 9;
-	width: 255px;
-	display: none;
-}
-.guitar-player img, .drummer-player img, .drummer-player2 img {
-	width: 100%;
+
+@keyframes sprite-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6041px 0;
+  }
 }
 
 /* ****************baby****************** */
