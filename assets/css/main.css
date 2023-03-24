@@ -3810,7 +3810,7 @@ input#open {
 /* ***********************party********************** */
 
 .body3 {
-  background: linear-gradient(to top, #be93c5, #7bc6cc);
+  background: linear-gradient(to top, #f07cf7, #301931);
   height: 90%;
   overflow: hidden;
 }
@@ -4348,3 +4348,6 @@ animation: soother 2.5s infinite;
   }
   
 }
+
+/* *********EVENT******************************* */
+
